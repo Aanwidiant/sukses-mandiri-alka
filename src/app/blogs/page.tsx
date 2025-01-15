@@ -9,13 +9,13 @@ export default function BlogPage() {
   };
 
   return (
-    <main className='pt-32 pb-16'>
+    <main className="pt-32 pb-16">
       <div className="container">
         <div className="w-full mx-auto mb-6 text-center">
           <h2 className="w-full mb-6 text-3xl font-bold text-center text-dark lg:text-4xl">
             Halaman <span className="text-primary">Blog</span>
           </h2>
-          <p className=" font-medium text-md text-secondry md:text-lg">Berikut ini adalah beberapa artikel dan blok yang kami tulis. Semoga menambah wawasan.</p>
+          <p className=" font-medium md:text-lg">Berikut ini adalah beberapa artikel dan blok yang kami tulis. Semoga menambah wawasan.</p>
         </div>
 
         <div className="grid grid-cols-6 gap-6 w-full">

@@ -13,7 +13,15 @@ export default function RootLayout({
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   return (
     <html lang="en" className="scroll-smooth">
-      <body>
+      <body
+        style={{
+          width: "100%",
+          height: "100vh",
+          backgroundImage: "url('/image/background/bg.svg')",
+          backgroundRepeat: "repeat",
+          backgroundSize: "auto",
+        }}
+      >
         <Header isSidebarOpen={isSidebarOpen} toggleSidebar={() => setSidebarOpen((prev) => !prev)} />
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={() => setSidebarOpen(false)} />
         <div>{children}</div>

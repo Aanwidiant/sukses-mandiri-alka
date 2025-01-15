@@ -1,21 +1,182 @@
 [
   {
     "id": 1,
-    "name": "Aluminium Frame Modern",
-    "description": "Aluminium frame yang ideal untuk desain rumah modern, ringan namun kuat.",
-    "price": 5000000,
-    "image": "/images/products/aluminium-frame-modern.jpg",
+    "name": "Pintu Swing Alumunium",
+    "description": "Pintu swing dengan material aluminium yang kuat dan tahan lama, cocok untuk rumah modern.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
     "category": "Aluminium",
     "specifications": {
       "material": "Aluminium",
+      "size": "100cm x 200cm",
+      "weight": "15kg",
+      "color": "Silver, Coklat, Hitam"
+    },
+    "features": ["Desain elegan dan modern", "Mudah dalam perawatan", "Tahan lama dan kokoh"]
+  },
+  {
+    "id": 2,
+    "name": "Jendela Alumunium",
+    "description": "Jendela aluminium dengan berbagai ukuran, memberikan sirkulasi udara yang baik dan estetika yang tinggi.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Aluminium",
+    "specifications": {
+      "material": "Aluminium",
+      "size": "150cm x 100cm",
+      "weight": "12kg",
+      "color": "Silver, Coklat, Hitam"
+    },
+    "features": ["Ringan dan mudah dibuka", "Tahan terhadap cuaca ekstrem", "Desain minimalis dan modern"]
+  },
+  {
+    "id": 3,
+    "name": "Etalase",
+    "description": "Etalase aluminium dengan kaca bening, ideal untuk display barang di toko atau showroom.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Aluminium",
+    "specifications": {
+      "material": "Aluminium",
+      "size": "150cm x 50cm x 100cm",
+      "weight": "20kg",
+      "color": "Silver, Coklat, Hitam"
+    },
+    "features": ["Kaca bening yang jernih", "Tahan lama dan kokoh", "Desain profesional"]
+  },
+  {
+    "id": 4,
+    "name": "Lemari Alumunium",
+    "description": "Lemari aluminium dengan desain modern, cocok untuk penyimpanan barang di ruang rumah atau kantor.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Aluminium",
+    "specifications": {
+      "material": "Aluminium",
+      "size": "120cm x 50cm x 180cm",
+      "weight": "25kg",
+      "color": "Silver, Coklat, Hitam"
+    },
+    "features": ["Tahan karat dan ringan", "Desain simpel dan modern", "Mudah untuk dibersihkan"]
+  },
+  {
+    "id": 5,
+    "name": "Kaca Bening 3mm",
+    "description": "Kaca bening dengan ketebalan 3mm, ideal untuk berbagai aplikasi seperti jendela atau pintu.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca",
       "size": "200cm x 100cm",
       "weight": "5kg",
-      "color": "Silver"
+      "color": "Bening"
     },
-    "features": [
-      "Ringan dan kokoh",
-      "Tahan lama dan mudah perawatannya",
-      "Dapat digunakan di berbagai aplikasi"
-    ]
+    "features": ["Kualitas kaca bening", "Mudah dipasang", "Tahan terhadap goresan"]
+  },
+  {
+    "id": 6,
+    "name": "Kaca Bening 5mm",
+    "description": "Kaca bening dengan ketebalan 5mm, cocok untuk aplikasi yang membutuhkan kekuatan lebih.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca",
+      "size": "200cm x 100cm",
+      "weight": "7kg",
+      "color": "Bening"
+    },
+    "features": ["Tebal dan kuat", "Tahan lama", "Mudah dibersihkan"]
+  },
+  {
+    "id": 7,
+    "name": "Kaca Bening 8mm",
+    "description": "Kaca bening dengan ketebalan 8mm, memberikan kekuatan ekstra dan ketahanan terhadap tekanan.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca",
+      "size": "200cm x 100cm",
+      "weight": "10kg",
+      "color": "Bening"
+    },
+    "features": ["Kekuatan ekstra", "Ideal untuk jendela besar", "Tahan terhadap cuaca ekstrem"]
+  },
+  {
+    "id": 8,
+    "name": "Kaca Riben 3mm",
+    "description": "Kaca riben dengan ketebalan 3mm yang dapat menahan panas dan mengurangi sinar UV.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca Riben",
+      "size": "200cm x 100cm",
+      "weight": "6kg",
+      "color": "Coklat/Hitam transparan"
+    },
+    "features": ["Menahan panas dan UV", "Memberikan kenyamanan suhu", "Desain stylish"]
+  },
+  {
+    "id": 9,
+    "name": "Kaca Riben 5mm",
+    "description": "Kaca riben dengan ketebalan 5mm, memberikan perlindungan lebih terhadap panas dan sinar UV.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca Riben",
+      "size": "200cm x 100cm",
+      "weight": "8kg",
+      "color": "Coklat/Hitam transparan"
+    },
+    "features": ["Melindungi dari panas dan UV", "Kualitas tinggi", "Tahan lama"]
+  },
+  {
+    "id": 10,
+    "name": "Kaca Es 3mm",
+    "description": "Kaca es dengan ketebalan 3mm, memberikan privasi lebih dengan tampilan buram.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca Es",
+      "size": "200cm x 100cm",
+      "weight": "6kg",
+      "color": "Putih Bertekstur"
+    },
+    "features": ["Privasi lebih", "Tampilan buram", "Tahan lama"]
+  },
+  {
+    "id": 11,
+    "name": "Kaca Es 5mm",
+    "description": "Kaca es dengan ketebalan 5mm, memberikan privasi dengan ketahanan yang lebih kuat.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Kaca",
+    "specifications": {
+      "material": "Kaca Es",
+      "size": "200cm x 100cm",
+      "weight": "8kg",
+      "color": "Putih Bertekstur"
+    },
+    "features": ["Lebih tahan lama", "Desain buram yang elegan", "Privasi lebih"]
+  },
+  {
+    "id": 12,
+    "name": "Kusen Alumunium",
+    "description": "Kusen aluminium yang kuat dan tahan lama, cocok untuk pintu dan jendela dengan ukuran yang dapat disesuaikan.",
+    "price": "Akan diinformasikan setelah konsultasi",
+    "image": null,
+    "category": "Aluminium",
+    "specifications": {
+      "material": "Aluminium",
+      "size": "Berbagai ukuran tersedia",
+      "weight": "10kg",
+      "color": "Silver, Coklat, Hitam"
+    },
+    "features": ["Kuat dan tahan lama", "Desain minimalis", "Mudah dipasang"]
   }
 ]

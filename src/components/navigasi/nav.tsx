@@ -25,7 +25,7 @@ export default function Navigasi({ layout, toggleSidebar }: NavigasiProps) {
         {[
           { href: "/", label: "Beranda" },
           { href: "/about", label: "Tentang Kami" },
-          { href: "/products", label: "Produk dan Jasa" },
+          { href: "/products", label: "Produk" },
           { href: "/blogs", label: "Blog" },
           { href: "/contact", label: "Kontak" },
         ].map((item) => (

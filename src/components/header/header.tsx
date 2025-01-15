@@ -15,7 +15,7 @@ export default function Header({ isSidebarOpen, toggleSidebar }: HeaderProps) {
         <div className="flex items-center justify-between w-full h-24">
           <div className="px-4 flex gap-x-4 items-center">
             <Logo className="h-8 lg:h-10" />
-            <Link href="/" className="uppercase text-lg lg:text-2xl italic font-semibold text-white">
+            <Link href="/" className="uppercase text-2xl lg:text-2xl italic font-semibold text-white">
               Sukses Mandiri
             </Link>
           </div>
