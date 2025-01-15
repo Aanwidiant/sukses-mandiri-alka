@@ -40,7 +40,7 @@ export default async function ArticlePage({params}: { params: { slug: string } }
                         </div>
                     ))}
                 </div>
-                <p>tags:</p>
+                <p className='my-2'>tags:</p>
                 <div className='w-full flex flex-wrap gap-2'>
                     {article.tags.map((tag, index) => (
                         <div key={index} className="py-1 px-2 w-fit bg-primary text-white rounded-md">

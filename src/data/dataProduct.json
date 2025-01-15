@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "name": "Aluminium Frame Modern",
+    "description": "Aluminium frame yang ideal untuk desain rumah modern, ringan namun kuat.",
+    "price": 5000000,
+    "image": "/images/products/aluminium-frame-modern.jpg",
+    "category": "Aluminium",
+    "specifications": {
+      "material": "Aluminium",
+      "size": "200cm x 100cm",
+      "weight": "5kg",
+      "color": "Silver"
+    },
+    "features": [
+      "Ringan dan kokoh",
+      "Tahan lama dan mudah perawatannya",
+      "Dapat digunakan di berbagai aplikasi"
+    ]
+  }
+]

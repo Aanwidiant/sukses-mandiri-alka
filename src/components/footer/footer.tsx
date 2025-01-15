@@ -17,18 +17,18 @@ export default function Footer() {
               Sukses Mandiri
             </Link>
           </h2>
-          <div className="flex flex-col gap-y-2">
+          <div className="flex flex-col gap-y-2.5">
             <h3 className="text-xl font-bold">Hubungi Kami</h3>
             <div className="flex gap-x-3">
-              <Whatsapp className="fill-white w-5 h-5" />
+              <Whatsapp className="fill-white w-6 h-6" />
               <p>0813-9340-5038</p>
             </div>
             <div className="flex gap-x-3">
-              <Mail className="fill-white w-5 h-5" />
+              <Mail className="fill-white w-6 h-6" />
               <p>suksesmandiri.alka@gmail.com</p>
             </div>
             <div className="flex gap-x-3">
-              <Location className="stroke-white stroke-2 w-5 h-5" />
+              <Location className="stroke-white stroke-2 w-6 h-6" />
               <div className="flex flex-col gap-y-2">
                 <p>Jl. Pengasih-Wates, Kedung Galih RT 10/ RW 03</p>
                 <p>Pengasih, Kulon Progo</p>
