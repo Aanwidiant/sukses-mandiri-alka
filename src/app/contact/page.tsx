@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useState } from "react";
 import Whatsapp from "@/components/icons/whatsapp";
 import Mail from "@/components/icons/mail";
 import Location from "@/components/icons/location";
@@ -10,13 +10,11 @@ export default function ContactPage() {
   const [message, setMessage] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Fungsi untuk menutup modal
   const closeModal = () => setIsModalOpen(false);
 
-  // Fungsi untuk membuka modal saat tombol Kirim diklik
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setIsModalOpen(true); // Membuka modal
+    setIsModalOpen(true);
   };
 
   return (
@@ -77,7 +75,7 @@ export default function ContactPage() {
             <div className=" bg-white border-2 border-primary/25 p-4 rounded-lg">
               <p className="mb-3 font-medium text-secondry text-lg">Serta ikuti kami di media sosial.</p>
               <div className="flex items-center">
-                <SocialMedia fillColor="fill-dark" size="large" border="border-dark" />
+                <SocialMedia fillColor="fill-primary" size="large" border="border-primary" />
               </div>
             </div>
           </div>

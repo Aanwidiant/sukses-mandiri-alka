@@ -29,11 +29,11 @@ export default async function ArticleLayout({ children, params }: { children: Re
                 .replace(/,/g, "")
                 .replace(/[^a-z0-9\-]/g, "")}`}
               key={article.title}
-              className="bg-secondary p-3 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 cursor-pointer"
+              className="bg-secondary p-3 rounded-lg hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 cursor-pointer group"
             >
               <div className="flex flex-col gap-y-2">
                 <div className="h-52 w-full relative rounded-lg overflow-hidden">
-                  <Image src={article.image || "/images/default-image.jpg"} alt="article-img" layout="fill" objectFit="cover" className="rounded-lg" />
+                  <Image src={article.image || "/images/default-image.jpg"} alt="article-img" layout="fill" objectFit="cover" className="rounded-lg group-hover:scale-105" />
                 </div>
                 <h3 className="text-xl font-semibold">{article.title}</h3>
                 <p>{new Date(article.created_at).toLocaleDateString("id-ID", { weekday: "long", day: "2-digit", month: "long", year: "numeric" })}</p>

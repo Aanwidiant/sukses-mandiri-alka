@@ -47,7 +47,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col gap-y-2">
                 <span className="text-xl font-semibold">{member.name}</span>
-                <span className="text-lg">{member.role}</span>
+                <span className="font-light">{member.role}</span>
               </div>
             </div>
           ))}
