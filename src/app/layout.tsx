@@ -4,17 +4,14 @@ import ClientLayout from "@/components/layouts/client-layout";
 import React from "react";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sukses-mandiri-alka.vercel.app"),
+  metadataBase: new URL("https://sukses-mandiri.my.id/"),
   title: "Sukses Mandiri Alka",
-  description: "Website UMKM Sukses Mandiri untuk Aluminium dan Kaca",
+  description: "Website UMKM Sukses Mandiri Aluminium dan Kaca",
   keywords: ["aluminium", "kaca", "umkm"],
-  verification: {
-    google: "PZluAmRpWGTONUDm8SXAbz90rFzL3Z2IkidGKUOFr14",
-  },
   openGraph: {
     title: "Sukses Mandiri Alka",
-    description: "Website UMKM Sukses Mandiri untuk Aluminium dan Kaca",
-    url: "https://sukses-mandiri-alka.vercel.app",
+    description: "Website UMKM Sukses Mandiri Aluminium dan Kaca",
+    url: "https://sukses-mandiri.my.id/",
     siteName: "Sukses Mandiri Alka",
     images: ["/image/logo/logo.svg"],
   },

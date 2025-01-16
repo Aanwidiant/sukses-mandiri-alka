@@ -19,19 +19,19 @@ export async function generateMetadata({ params }: DetailProductLayoutProps) {
   const { slug } = await params;
 
   const currentProduct = ProductData.find(
-      (product: Product) =>
-          product.name
-              .toLowerCase()
-              .replace(/\s+/g, "-")
-              .replace(/,/g, "")
-              .replace(/[^a-z0-9\-]/g, "") === slug
+    (product: Product) =>
+      product.name
+        .toLowerCase()
+        .replace(/\s+/g, "-")
+        .replace(/,/g, "")
+        .replace(/[^a-z0-9\-]/g, "") === slug
   );
 
   if (!currentProduct) {
     return {
       title: "Produk Tidak Ditemukan - Sukses Mandiri Alka",
       description: "Produk yang Anda cari tidak tersedia.",
-      metadataBase: new URL("https://sukses-mandiri-alka.vercel.app"),
+      metadataBase: new URL("https://sukses-mandiri.my.id/"),
     };
   }
 
@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: DetailProductLayoutProps) {
     openGraph: {
       title: `${currentProduct.name} - Sukses Mandiri Alka`,
       description: `Detail produk ${currentProduct.name}.`,
-      url: `https://sukses-mandiri-alka.vercel.app/products/${slug}`,
+      url: `https://sukses-mandiri.my.id/products/${slug}`,
       images: [currentProduct.image || "/image/landing-image/landing-img.jpeg"],
     },
   };

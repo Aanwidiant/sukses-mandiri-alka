@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://sukses-mandiri-alka.vercel.app/sitemap.xml
+Sitemap: https://sukses-mandiri.my.id/sitemap.xml
