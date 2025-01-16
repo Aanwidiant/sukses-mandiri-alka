@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: DetailProductLayoutProps) {
     openGraph: {
       title: `${currentProduct.name} - Sukses Mandiri Alka`,
       description: `Detail produk ${currentProduct.name}.`,
-      url: `https://suksesmandiri.com/products/${slug}`,
+      url: `https://sukses-mandiri-alka.vercel.app/products/${slug}`,
       images: [currentProduct.image || "/image/landing-image/landing-img.jpeg"],
     },
   };

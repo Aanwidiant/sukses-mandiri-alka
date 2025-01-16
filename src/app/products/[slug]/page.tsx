@@ -46,7 +46,7 @@ export default async function DetailProductPage({ params }: DetailProductPagePro
         <main className="container">
             <div className="flex flex-wrap">
                 <div className="w-full p-4 lg:w-1/2">
-                    <div className="h-96 lg:h-full relative rounded-lg overflow-hidden group cursor-pointer">
+                    <div className="h-96 lg:h-full relative rounded-lg overflow-hidden group cursor-pointer hover:shadow-xl hover:-translate-y-2 transition-transform duration-300">
                         {product.image ? (
                             <Image src={product.image} alt={`${product.name} image`} layout="fill" objectFit="cover"
                                    className="rounded-lg"/>

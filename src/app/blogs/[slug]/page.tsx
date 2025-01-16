@@ -39,8 +39,8 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
       <div className="flex flex-wrap">
         <h1 className="w-full mb-6 text-2xl font-bold text-center text-dark lg:text-3xl">{article.title}</h1>
         <div className="w-full">
-          <div className="h-96 w-full relative rounded-lg overflow-hidden">
-            <Image src={article.image} alt="article-img" layout="fill" objectFit="cover" className="rounded-lg" />
+          <div className="h-96 w-full relative rounded-lg overflow-hidden hover:shadow-xl group hover:-translate-y-2 transition-transform duration-300">
+            <Image src={article.image} alt="article-img" layout="fill" objectFit="cover" className="rounded-lg group-hover:scale-105" />
           </div>
           <div className="flex flex-wrap gap-x-8 gap-y-2 px-4 py-2 lg:text-lg text-base">
             <p>

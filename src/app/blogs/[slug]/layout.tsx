@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: Props) {
         openGraph: {
             title: `${currentArticle.title} - Sukses Mandiri Alka`,
             description: currentArticle.content[0] || "Informasi lengkap dan menarik tentang artikel ini.",
-            url: `https://suksesmandiri.com/blogs/${slug}`,
+            url: `https://sukses-mandiri-alka.vercel.app/blogs/${slug}`,
             images: `${currentArticle.image}`,
         },
     };

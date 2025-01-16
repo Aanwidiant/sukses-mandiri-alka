@@ -41,8 +41,8 @@ export default function AboutPage() {
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
           {teamData.map((member: TeamMember, index: number) => (
-            <div key={index} className="rounded-lg bg-secondary p-6 flex gap-x-6 items-center mx-6">
-              <div className="h-24 w-24 bg-white rounded-full overflow-hidden">
+            <div key={index} className="rounded-lg bg-secondary p-6 flex gap-x-6 items-center mx-6 group hover:shadow-xl hover:-translate-y-2 transition-transform duration-300 cursor-pointer">
+              <div className="h-24 w-24 bg-white rounded-full overflow-hidden group-hover:scale-105">
                 {member.image ? <Image src={member.image} alt={member.name} width={96} height={96} className="h-full w-full object-cover" /> : <div className="flex items-center justify-center h-full text-sm text-gray-500">No Image</div>}
               </div>
               <div className="flex flex-col gap-y-2">
