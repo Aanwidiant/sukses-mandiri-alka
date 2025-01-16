@@ -4,8 +4,17 @@ import ClientLayout from '@/components/layouts/client-layout';
 import React from "react";
 
 export const metadata: Metadata = {
-    title: 'My Next.js App',
-    description: 'A description of your app for SEO purposes',
+    metadataBase: new URL("https://sukses-mandiri-alka.vercel.app"),
+    title: 'Sukses Mandiri Alka',
+    description: 'Website UMKM Sukses Mandiri untuk Aluminium dan Kaca',
+    keywords: ['aluminium', 'kaca', 'umkm'],
+    openGraph: {
+        title: 'Sukses Mandiri Alka',
+        description: 'Website UMKM Sukses Mandiri untuk Aluminium dan Kaca',
+        url: 'https://sukses-mandiri-alka.vercel.app',
+        siteName: 'Sukses Mandiri Alka',
+        images: ['/image/logo/logo.svg'],
+    },
     icons: {
         icon: [
             { url: '/image/logo/logo.svg', type: 'image/svg+xml' },

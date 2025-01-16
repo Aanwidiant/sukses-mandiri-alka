@@ -15,6 +15,38 @@ type DetailProductLayoutProps = {
   }>;
 };
 
+export async function generateMetadata({ params }: DetailProductLayoutProps) {
+  const { slug } = await params;
+
+  const currentProduct = ProductData.find(
+      (product: Product) =>
+          product.name
+              .toLowerCase()
+              .replace(/\s+/g, "-")
+              .replace(/,/g, "")
+              .replace(/[^a-z0-9\-]/g, "") === slug
+  );
+
+  if (!currentProduct) {
+    return {
+      title: "Produk Tidak Ditemukan - Sukses Mandiri Alka",
+      description: "Produk yang Anda cari tidak tersedia.",
+      metadataBase: new URL("https://sukses-mandiri-alka.vercel.app"),
+    };
+  }
+
+  return {
+    title: `${currentProduct.name} - Sukses Mandiri Alka`,
+    description: `Temukan detail produk ${currentProduct.name} dari Sukses Mandiri. Produk berkualitas untuk kebutuhan Anda.`,
+    openGraph: {
+      title: `${currentProduct.name} - Sukses Mandiri Alka`,
+      description: `Detail produk ${currentProduct.name}.`,
+      url: `https://suksesmandiri.com/products/${slug}`,
+      images: [currentProduct.image || "/image/landing-image/landing-img.jpeg"],
+    },
+  };
+}
+
 export default async function DetailProductLayout({ children, params }: DetailProductLayoutProps) {
   const { slug } = await params;
 

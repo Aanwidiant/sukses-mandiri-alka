@@ -10,6 +10,38 @@ type Props = {
     }>;
 };
 
+export async function generateMetadata({ params }: Props) {
+    const { slug } = await params;
+
+    const currentArticle = ArticleData.find((article) => {
+        const articleSlug = article.title
+            .toLowerCase()
+            .replace(/\s+/g, "-")
+            .replace(/,/g, "")
+            .replace(/[^a-z0-9\-]/g, "");
+        return articleSlug === slug;
+    });
+
+    if (!currentArticle) {
+        return {
+            title: "Artikel Tidak Ditemukan - Sukses Mandiri Alka",
+            description: "Artikel yang Anda cari tidak tersedia.",
+            metadataBase: new URL("https://sukses-mandiri-alka.vercel.app"),
+        };
+    }
+
+    return {
+        title: `${currentArticle.title} - Sukses Mandiri Alka`,
+        description: currentArticle.content[0] || "Temukan informasi menarik dari artikel ini.",
+        openGraph: {
+            title: `${currentArticle.title} - Sukses Mandiri Alka`,
+            description: currentArticle.content[0] || "Informasi lengkap dan menarik tentang artikel ini.",
+            url: `https://suksesmandiri.com/blogs/${slug}`,
+            images: `${currentArticle.image}`,
+        },
+    };
+}
+
 export default async function ArticleLayout({ children, params }: Props) {
     const { slug } = await params;
 

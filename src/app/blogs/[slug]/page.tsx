@@ -42,7 +42,7 @@ export default async function ArticlePage({ params }: ArticlePageProps) {
           <div className="h-96 w-full relative rounded-lg overflow-hidden">
             <Image src={article.image} alt="article-img" layout="fill" objectFit="cover" className="rounded-lg" />
           </div>
-          <div className="flex gap-x-8 px-4 py-2 lg:text-lg text-base">
+          <div className="flex flex-wrap gap-x-8 gap-y-2 px-4 py-2 lg:text-lg text-base">
             <p>
               <span className="font-semibold">Publish:</span> {new Date(article.created_at).toLocaleDateString("id-ID", { weekday: "long", day: "2-digit", month: "long", year: "numeric" })}
             </p>
