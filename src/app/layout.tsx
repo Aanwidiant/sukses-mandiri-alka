@@ -1,32 +1,39 @@
-"use client";
+import type { Metadata } from 'next'
 import "./globals.css";
-import Header from "@/components/header/header";
-import Footer from "@/components/footer/footer";
-import Sidebar from "@/components/sidebar/sidebar";
-import { useState } from "react";
+import ClientLayout from '@/components/layouts/client-layout';
+import React from "react";
+
+export const metadata: Metadata = {
+    title: 'My Next.js App',
+    description: 'A description of your app for SEO purposes',
+    icons: {
+        icon: [
+            { url: '/image/logo/logo.svg', type: 'image/svg+xml' },
+            { url: '/image/logo/logo.png', type: 'image/png' }
+        ]
+    }
+}
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
+                                       children,
+                                   }: Readonly<{
+    children: React.ReactNode;
 }>) {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
-  return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        style={{
-          width: "100%",
-          height: "100vh",
-          backgroundImage: "url('/image/background/bg.svg')",
-          backgroundRepeat: "repeat",
-          backgroundSize: "auto",
-        }}
-      >
-        <Header isSidebarOpen={isSidebarOpen} toggleSidebar={() => setSidebarOpen((prev) => !prev)} />
-        <Sidebar isOpen={isSidebarOpen} toggleSidebar={() => setSidebarOpen(false)} />
-        <div>{children}</div>
-        <Footer />
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en" className="scroll-smooth">
+        <body
+            style={{
+                width: "100%",
+                height: "100vh",
+                backgroundImage: "url('/image/background/bg.svg')",
+                backgroundRepeat: "repeat",
+                backgroundSize: "auto",
+            }}
+        >
+        <ClientLayout>
+            {children}
+        </ClientLayout>
+        </body>
+        </html>
+    );
 }

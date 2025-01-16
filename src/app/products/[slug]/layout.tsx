@@ -8,8 +8,15 @@ interface Product {
   image: string | null;
 }
 
-export default async function DetailProductLayout({ children, params }: { children: React.ReactNode; params: { slug: string } }) {
-  const { slug } = await Promise.resolve(params);
+type DetailProductLayoutProps = {
+  children: React.ReactNode;
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
+export default async function DetailProductLayout({ children, params }: DetailProductLayoutProps) {
+  const { slug } = await params;
 
   const currentProduct = ProductData.find(
     (product: Product) =>

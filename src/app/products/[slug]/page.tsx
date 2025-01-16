@@ -20,14 +20,14 @@ interface Product {
     features: string[];
 }
 
-interface ProductPageProps {
-    params: {
+type DetailProductPageProps = {
+    params: Promise<{
         slug: string;
-    };
-}
+    }>;
+};
 
-export default async function DetailProductPage({params}: ProductPageProps) {
-    const {slug} = await Promise.resolve(params);
+export default async function DetailProductPage({ params }: DetailProductPageProps) {
+    const { slug } = await params;
 
     const product = ProductData.find(
         (product: Product) =>

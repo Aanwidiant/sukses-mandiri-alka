@@ -12,14 +12,14 @@ interface Article {
   tags: string[];
 }
 
-interface ArticlePageProps {
-  params: {
+type ArticlePageProps = {
+  params: Promise<{
     slug: string;
-  };
-}
+  }>;
+};
 
 export default async function ArticlePage({ params }: ArticlePageProps) {
-  const { slug } = await Promise.resolve(params);
+  const { slug } = await params;
 
   const article = ArticleData.find(
     (article: Article) =>

@@ -12,7 +12,7 @@ export default function Home() {
                             src="/image/landing-image/landing-img.jpeg"
                             alt="landing-page-img"
                             layout="fill"
-                            objectFit=""
+                            objectFit="fit"
                             className=" transform transition-transform duration-300 scale-105 group-hover:scale-110"
                         />
                     </div>
